@@ -1,0 +1,172 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background-color: #0d192b;
+  display: flex;
+  flex-direction: column;
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 62px 24px;
+}
+
+.container {
+  max-width: 375px;
+}
+
+.card {
+  background-color: #14253d;
+  border-radius: 15px;
+  box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  padding: 24px;
+}
+
+.images {
+  position: relative;
+}
+
+.equilibrium {
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.images div {
+  background-color: #00fff7;
+  border-radius: 8px;
+  height: 92%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.images div:hover{
+  cursor: pointer;
+  opacity: .6;
+}
+
+.view {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  color: #fff;
+  cursor: pointer;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+
+h1:hover {
+  color: #00fff7;
+}
+
+.card > p {
+  color: #8bacda;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  margin-bottom: 16px;
+}
+
+/* BLOCK INFO */
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.etherum {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 0.4053rem;
+  justify-content: center;
+}
+
+.etherum p {
+  color: #00fff7;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.clock {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 0.4809rem;
+  justify-content: center;
+}
+
+.clock p {
+  color: #8bacda;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* BREAKING ELEMENT */
+hr {
+  border: 1px solid #2f415b;
+  margin-bottom: 16px;
+}
+
+/* CREATOR */
+.creator {
+  align-items: center;
+  display: flex;
+}
+
+.creator img {
+  border: 1px solid #fff;
+  border-radius: 33px;
+  margin-right: 16px;
+  width: 12%;
+}
+
+.creator p {
+  color: #8bacda;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.creator span {
+  color: #fff;
+  cursor: pointer;
+}
+
+.creator span:hover {
+  color: #00fff7;
+}
+
+/* FOOTER */
+.attribution {
+  font-size: 0.6875rem;
+  margin-top: 20px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
